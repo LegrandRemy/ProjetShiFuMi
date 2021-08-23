@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <title>SHI-FU-MI</title>
+</head>
+
+<body>
+    <!-- Ctn principal avec blur -->
+    <div id="popUpStart">
+        <div id="container">
+            <!-- Pop-up victoire / défaite -->
+            <div id="ctn-gray">
+                <div class="ctn-victory-defeat ctn-victory ctn-defeat">
+                    <button class="button-defeat-or-win btn-style-victory btn-style-defeat">New game</button>
+                    <p class="victoryPercent"></p>
+                    <hr class="victory-separate">
+                    <p class="victory-count"></p>
+                </div>
+            </div>
+            <!--  -->
+            <!-- Ctn avec bordure bleu -->
+            <div id="border">
+                <!-- Titre -->
+                <div id="title">
+                    <h1>SHSTAR-FUH-MUI</h1>
+                    <img id="rules" src="assets/img/regles du jeu.png" alt="regle du jeu">
+
+                </div>
+                <!-- Compteur de round -->
+                <div id="round">
+                    <p class="round">Round : 0 / 10</p>
+                    <p id="matchCounter"></p>
+                </div>
+                <!-- Début grid - placement des éléments -->
+                <div id="gridContainer">
+                    <div id="grid">
+                        <div class="box box-1">
+                            <!-- Rond choix du joueur -->
+                            <div class="characterChoiceUser characterChoice">
+                                <img id="switch-img-1" src="" alt="">
+                            </div>
+                            <!--  -->
+                            <!-- Compteur de score joueur -->
+                            <div class="score">
+                                <p class="scorePlayer">My score : 0</p>
+                            </div>
+                            <!--  -->
+                        </div>
+                        <!-- ligne gauche -->
+                        <div class="box box-2">
+                            <img class="line" id="line-js-1" src="assets/img/bleu-gauche.png" alt="">
+                        </div>
+                        <!--  -->
+                        <!-- Perdu / gagné / draw -->
+                        <div class="box box-3"></div>
+                        <!--  -->
+                        <!-- Ligne droite -->
+                        <div class="box box-4">
+                            <img class="line" id="line-js-2" src="assets/img/bleu-droite.png" alt="">
+                        </div>
+                        <div class="box box-5">
+                            <!-- Rond choix de l'ia -->
+                            <div class="characterChoice">
+                                <!-- Div Vide pour le choix du bot -->
+                                <img id="switch-img-2" src="" alt="">
+                            </div>
+                            <!--  -->
+                            <!-- Compteur de score ia -->
+                            <div class="score">
+                                <p class="scoreAi">Ia score : 0</p>
+                            </div>
+                            <!--  -->
+                        </div>
+                        <!-- Choix joueur -->
+                        <div class="box box-6">
+                            <img class="button pointer" id="NovaUser" src="assets/img/terran.png" alt="">
+                        </div>
+                        <div class="box box-7">
+                            <img class="button pointer" id="SelendisUser" src="assets/img/protoss.png" alt="">
+                        </div>
+                        <div class="box box-8">
+                            <img class="button pointer" id="KerriganUser" src="assets/img/zerg.png" alt="">
+                        </div>
+
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+            <audio id="loadSound" src=""></audio>
+            <div id="copyright">
+                <div>© COPYRIGHT Sophie | Chrys | Rémy</div>
+            </div>
+        </div>
+    </div>
+    <div id="containerRules">
+
+        <img id="imgRules" src="assets/img/regles du jeu.png" alt="rules">
+
+        <div id="buttonRules">
+            <button id="buttonPlay"> PLAY GAME</button>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
